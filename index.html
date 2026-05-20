@@ -1,0 +1,1791 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),
+      dl=l!='dataLayer' ? '&l='+l : '';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N2D8PJHW');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inspire AI — Build AI Projects, Prove Your Skills</title>
+  <meta name="description" content="A structured AI program for engineers to build 7 industry-style AI projects, publish a portfolio, and gain practical AI confidence.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link rel="preload" as="image"
+        href="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq"
+        imagesrcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_400,c_fill,ar_4:5/IMG_0863_jn6fdq 400w,
+                     https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_4:5/IMG_0863_jn6fdq 600w,
+                     https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq 800w,
+                     https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_1000,c_fill,ar_4:5/IMG_0863_jn6fdq 1000w"
+        imagesizes="(max-width: 900px) 400px, 420px"
+        fetchpriority="high">
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --green: #00C853;
+    --green-dark: #007A1F;
+    --navy: #0A0F1E;
+    --navy-light: #111827;
+    --navy-mid: #1a2235;
+    --white: #FFFFFF;
+    --off-white: #F8F9FC;
+    --gray: #9CA3AF;
+    --gray-light: #E5E7EB;
+    --amber: #F59E0B;
+    --text: #1F2937;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 15, 30, 0.97);
+        padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.3px;
+  }
+
+  .nav-logo span {
+    color: var(--green);
+  }
+
+  .nav-cta {
+    background: var(--green);
+    color: #000;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 9px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .nav-cta:hover {
+    background: #33d76b;
+  }
+
+  /* ─── HERO ─── */
+  .hero-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .hero-layout h1,
+  .hero-layout .hero-sub {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-layout .hero-ctas,
+  .hero-layout .hero-trust {
+    justify-content: flex-start;
+  }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 200, 83, 0.25);
+    overflow: hidden;
+    background: var(--navy-mid);
+    aspect-ratio: 4/5;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 900px) {
+    .hero-layout {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 32px;
+    }
+
+    .hero-layout h1,
+    .hero-layout .hero-sub {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-layout .hero-ctas,
+    .hero-layout .hero-trust {
+      justify-content: center;
+    }
+
+    .hero-image {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  .hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 80px 5% 72px;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 200, 83, 0.12);
+    border: 1px solid rgba(0, 200, 83, 0.3);
+    color: var(--green);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.13;
+    letter-spacing: -1px;
+    max-width: 820px;
+    margin: 0 auto 20px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--green);
+  }
+
+  .hero-sub {
+    font-size: clamp(1.05rem, 2vw, 1.22rem);
+    color: #CBD5E1;
+    max-width: 620px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+
+  .hero-ctas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+  }
+
+  .btn-primary {
+    background: var(--green);
+    color: #000;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.15s, background 0.15s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: #33d76b;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 13px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: border-color 0.15s;
+  }
+
+  .btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .hero-trust {
+    font-size: 0.84rem;
+    color: #94A3B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .hero-trust span {
+    color: var(--gray-light);
+    font-weight: 600;
+  }
+
+  /* ─── SOCIAL PROOF BAR ─── */
+  .proof-bar {
+    background: var(--navy-light);
+    padding: 20px 5%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .proof-bar-label {
+    font-size: 0.78rem;
+    color: #CBD5E1;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  .proof-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .proof-logo {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #94A3B8;
+    letter-spacing: 0.5px;
+  }
+
+  .proof-logo-sep {
+    width: 1px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* ─── SECTION COMMONS ─── */
+  .hero,
+  .problem,
+  .contrast,
+  .projects,
+  .instructor,
+  .transformation,
+  .testimonials,
+  .curriculum,
+  .pricing,
+  .faq,
+  .final-cta {
+    padding: 80px 5%;
+  }
+
+  .section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+
+  .section-sub {
+    font-size: 1.08rem;
+    color: #374151;
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 48px;
+  }
+
+  .centered {
+    text-align: center;
+  }
+
+  .centered .section-sub {
+    margin: 0 auto 48px;
+  }
+
+  /* ─── PROBLEM SECTION ─── */
+  .problem {
+    background: var(--off-white);
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .problem-card {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 28px 24px;
+  }
+
+  .problem-icon {
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+
+  .problem-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .problem-card p {
+    font-size: 0.93rem;
+    color: #6B7280;
+    line-height: 1.65;
+  }
+
+  /* ─── CONTRAST / TRUTH SECTION ─── */
+  .contrast {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .contrast .section-title {
+    color: var(--white);
+  }
+
+  .contrast .section-sub {
+    color: #94A3B8;
+  }
+
+  .contrast-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .contrast-col {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 28px 24px;
+  }
+
+  .contrast-col.good {
+    background: rgba(0, 200, 83, 0.07);
+    border-color: rgba(0, 200, 83, 0.25);
+  }
+
+  .contrast-col h3 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    color: #6B7280;
+  }
+
+  .contrast-col.good h3 {
+    color: var(--green);
+  }
+
+  .contrast-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #CBD5E1;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .contrast-col.good .contrast-item {
+    color: var(--white);
+  }
+
+  .x-mark {
+    color: #B91C1C;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .check-mark {
+    color: var(--green);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ─── STATS BAR ─── */
+  .stats-bar {
+    background: var(--green);
+    padding: 36px 5%;
+  }
+
+  .stats-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #000;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1a3a1a;
+    max-width: 160px;
+    line-height: 1.4;
+  }
+
+  /* ─── PROJECTS ─── */
+  .projects {
+    background: var(--white);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: var(--green);
+  }
+
+  .project-number {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--white);
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 100px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .project-tag {
+    display: inline-block;
+    background: rgba(0, 200, 83, 0.1);
+    color: var(--green-dark);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 100px;
+    margin-bottom: 12px;
+    margin-left: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .project-card p {
+    font-size: 0.88rem;
+    color: #6B7280;
+    line-height: 1.65;
+  }
+
+  /* ─── INSTRUCTOR ─── */
+  .instructor {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .instructor .section-title {
+    color: var(--white);
+  }
+
+  .instructor-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .instructor-photo {
+    width: 100%;
+    border-radius: 12px;
+    background: var(--navy-mid);
+    aspect-ratio: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--green);
+    border: 2px solid rgba(0, 200, 83, 0.25);
+    overflow: hidden;
+  }
+
+  .instructor-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(0, 200, 83, 0.12);
+    border: 1px solid rgba(0, 200, 83, 0.3);
+    color: var(--green);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+
+  .instructor h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+
+  .instructor-title {
+    font-size: 1rem;
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .credential-list {
+    list-style: none;
+    margin-bottom: 28px;
+  }
+
+  .credential-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #CBD5E1;
+    margin-bottom: 10px;
+  }
+
+  .credential-list li::before {
+    content: '◆';
+    color: var(--green);
+    font-size: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .instructor-story {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 3px solid var(--green);
+    padding: 20px 20px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.93rem;
+    color: #CBD5E1;
+    line-height: 1.7;
+  }
+
+  .instructor-story strong {
+    color: var(--white);
+  }
+
+  /* ─── TRANSFORMATION ─── */
+  .transformation {
+    background: var(--off-white);
+  }
+
+  .transform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  @media (max-width: 1024px) {
+    .transform-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .transform-item {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .transform-from {
+    font-size: 0.88rem;
+    color: #6B7280;
+    text-decoration: line-through;
+    line-height: 1.4;
+  }
+
+  .transform-arrow {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .transform-to {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+  }
+
+  /* ─── TESTIMONIALS ─── */
+  .testimonials {
+    background: var(--white);
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    background: var(--off-white);
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 28px 24px;
+    position: relative;
+  }
+
+  .testimonial-quote {
+    font-size: 1.5rem;
+    color: var(--green);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .testimonial-name {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .testimonial-company {
+    font-size: 0.82rem;
+    color: var(--green-dark);
+    font-weight: 600;
+  }
+
+  .testimonial-context {
+    font-size: 0.8rem;
+    color: #6B7280;
+    margin-top: 2px;
+  }
+
+  /* ─── CURRICULUM ─── */
+  .curriculum {
+    background: var(--navy-light);
+    color: var(--white);
+  }
+
+  .curriculum .section-title {
+    color: var(--white);
+  }
+
+  .curriculum .section-sub {
+    color: #94A3B8;
+  }
+
+  .module-list {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .module-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .module-item:last-child {
+    border-bottom: none;
+  }
+
+  .module-num {
+    background: rgba(0, 200, 83, 0.15);
+    color: var(--green);
+    font-size: 0.78rem;
+    font-weight: 800;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .module-content h3 {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .module-content p {
+    font-size: 0.86rem;
+    color: #94A3B8;
+    line-height: 1.55;
+  }
+
+  .module-tag {
+    display: inline-block;
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--amber);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-right: 4px;
+  }
+
+  /* ─── PRICING ─── */
+  .pricing {
+    background: var(--white);
+  }
+
+  .pricing-box {
+    max-width: 520px;
+    margin: 0 auto;
+    border: 2px solid var(--green);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 200, 83, 0.12);
+  }
+
+  .pricing-header {
+    background: var(--navy);
+    padding: 28px 32px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .pricing-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--green);
+    margin-bottom: 8px;
+  }
+
+  .pricing-header h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+
+  .pricing-body {
+    padding: 32px;
+    background: var(--white);
+  }
+
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .price-current {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1;
+  }
+
+  .price-original {
+    font-size: 1.2rem;
+    color: #6B7280;
+    text-decoration: line-through;
+  }
+
+  .price-save {
+    display: inline-block;
+    background: rgba(239, 68, 68, 0.1);
+    color: #B91C1C;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-includes {
+    list-style: none;
+    margin-bottom: 28px;
+  }
+
+  .pricing-includes li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #374151;
+    padding: 7px 0;
+    border-bottom: 1px solid #F3F4F6;
+  }
+
+  .pricing-includes li:last-child {
+    border-bottom: none;
+  }
+
+  .pricing-includes li::before {
+    content: '✓';
+    color: var(--green);
+    font-weight: 900;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .btn-enroll {
+    display: block;
+    width: 100%;
+    background: var(--green);
+    color: #000;
+    font-weight: 900;
+    font-size: 1.08rem;
+    padding: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.15s, transform 0.15s;
+  }
+
+  .btn-enroll:hover {
+    background: #33d76b;
+    transform: translateY(-1px);
+  }
+
+  .btn-free-below {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #6B7280;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .pricing-guarantee {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 0.82rem;
+    color: #6B7280;
+  }
+
+  /* ─── FAQ ─── */
+  .faq {
+    background: var(--off-white);
+  }
+
+  .faq-list {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    padding: 20px 24px;
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .faq-question .faq-icon {
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: 400;
+    flex-shrink: 0;
+  }
+
+  .faq-answer {
+    padding: 0 24px 20px;
+    font-size: 0.93rem;
+    color: #374151;
+    line-height: 1.7;
+  }
+
+  /* ─── FINAL CTA ─── */
+  .final-cta {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 5%;
+  }
+
+  .final-cta h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto 16px;
+    letter-spacing: -0.5px;
+  }
+
+  .final-cta h2 em {
+    font-style: normal;
+    color: var(--green);
+  }
+
+  .final-cta p {
+    color: #94A3B8;
+    font-size: 1.05rem;
+    max-width: 500px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+  }
+
+  .final-cta-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--navy-light);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 32px 5%;
+    text-align: center;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .footer-logo span {
+    color: var(--green);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    font-size: 0.83rem;
+    color: #6B7280;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .footer-links a:hover {
+    color: var(--white);
+  }
+
+  .footer-copy {
+    font-size: 0.78rem;
+    color: #374151;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .instructor-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .instructor-photo {
+      aspect-ratio: 1/1;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+    .contrast-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .transform-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-inner {
+      gap: 28px;
+    }
+
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  /* ─── DIVIDER ─── */
+  .wave-divider {
+    overflow: hidden;
+    line-height: 0;
+  }
+</style>
+
+
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2D8PJHW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- ─── NAV ─── -->
+<nav>
+  <div class="nav-logo">Inspire<span>.ai</span></div>
+  <a href="https://inspireai.freshlearn.com/checkout/Course/38910" class="nav-cta">Enroll Now — ₹2,899</a>
+</nav>
+
+<main>
+
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-layout">
+    <div>
+      <div class="hero-eyebrow">
+        By Priyam Dalmia &nbsp;·&nbsp; IIT Kharagpur &nbsp;·&nbsp; AI Research Engineer @ FAANG &nbsp;·&nbsp;
+        Ex-Microsoft
+        Research
+      </div>
+      <h1>
+        Stop learning tools.<br>
+        Start building <em>proof.</em>
+      </h1>
+      <p class="hero-sub">
+        The structured AI program for engineers who want to go from overwhelmed to genuinely capable — with 7
+        industry-style
+        projects and a portfolio that turns heads in interviews and on LinkedIn.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://inspireai.freshlearn.com/checkout/Course/38910" class="btn-primary">Enroll Now — ₹2,899</a>
+      </div>
+      <div class="hero-trust">
+        <span>1,000+</span> engineers trained &nbsp;·&nbsp; Placed at
+        <span>Apple · Goldman Sachs · JP Morgan · Zepto · Flipkart · Accenture</span>
+      </div>
+    </div>
+    <div>
+      <div class="hero-image">
+        <img
+          src="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq"
+          srcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_400,c_fill,ar_4:5/IMG_0863_jn6fdq 400w,
+                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_4:5/IMG_0863_jn6fdq 600w,
+                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq 800w,
+                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_1000,c_fill,ar_4:5/IMG_0863_jn6fdq 1000w"
+          sizes="(max-width: 900px) 400px, 420px"
+          width="800"
+          height="1000"
+          alt="Priyam Dalmia"
+          fetchpriority="high"
+          decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SOCIAL PROOF BAR ─── -->
+<div class="proof-bar">
+  <div class="proof-bar-label">Our learners now work at</div>
+  <div class="proof-logos">
+    <div class="proof-logo">Apple</div>
+    <div class="proof-logo-sep"></div>
+    <div class="proof-logo">Goldman Sachs</div>
+    <div class="proof-logo-sep"></div>
+    <div class="proof-logo">JP Morgan</div>
+    <div class="proof-logo-sep"></div>
+    <div class="proof-logo">Zepto</div>
+    <div class="proof-logo-sep"></div>
+    <div class="proof-logo">Flipkart</div>
+    <div class="proof-logo-sep"></div>
+    <div class="proof-logo">Accenture</div>
+    <div class="proof-logo-sep"></div>
+    <div class="proof-logo">Microsoft</div>
+  </div>
+</div>
+
+<!-- ─── PROBLEM ─── -->
+<section class="problem">
+  <div class="section-label">Sound familiar?</div>
+  <h2 class="section-title">You know AI matters.<br>You just haven't found the right way in.</h2>
+  <p class="section-sub">
+    The AI space is moving fast — but most of what's out there is noise. Reels, tools, YouTube playlists. You're
+    consuming a lot and progressing very little.
+  </p>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <div class="problem-icon">🌊</div>
+      <h3>AI overwhelm is real</h3>
+      <p>New model every week. New tool every day. New shortcut every reel. You're saving content faster than you're
+        absorbing it — and you still don't have a clear mental model of how any of this actually works.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">📋</div>
+      <h3>Your resume looks like everyone else's</h3>
+      <p>Same experience, same stack, same profile. When the market treats your resume like a commodity, it pays you
+        like one. Certificates add a line. Projects change how your whole profile is seen.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">😶</div>
+      <h3>You're quiet in AI discussions</h3>
+      <p>AI comes up in meetings. You nod. You can't confidently explain what LLMs are, how agents work, or why a
+        certain approach matters. That silence is costing you more than you think.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-icon">🎭</div>
+      <h3>Wrong teachers, wrong content</h3>
+      <p>Most AI "educators" online are content creators — not engineers. They can make grippy videos, but they can't
+        teach you the foundations. If you're not sure your instructor actually builds AI systems, that's a problem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTRAST ─── -->
+<section class="contrast">
+  <div class="centered">
+    <div class="section-label" style="color: #4ade80;">The real difference</div>
+    <h2 class="section-title">There are two types of people in the AI wave.</h2>
+    <p class="section-sub">One type chases tools. The other builds understanding. The market rewards only one of them.
+    </p>
+  </div>
+  <div class="contrast-grid">
+    <div class="contrast-col">
+      <h3>What most people do</h3>
+      <div class="contrast-item"><span class="x-mark">✗</span> Learn new tools every week — then forget them</div>
+      <div class="contrast-item"><span class="x-mark">✗</span> Watch long playlists without building anything</div>
+      <div class="contrast-item"><span class="x-mark">✗</span> Collect prompt tips that won't impress a recruiter</div>
+      <div class="contrast-item"><span class="x-mark">✗</span> Get "certified" without showing applied skill</div>
+      <div class="contrast-item"><span class="x-mark">✗</span> Stay stuck in the same salary bracket, wondering why
+      </div>
+    </div>
+    <div class="contrast-col good">
+      <h3>What Inspire AI builds</h3>
+      <div class="contrast-item"><span class="check-mark">✓</span> Genuine understanding of how AI models actually work
+      </div>
+      <div class="contrast-item"><span class="check-mark">✓</span> 7 real, industry-style projects — not toy demos</div>
+      <div class="contrast-item"><span class="check-mark">✓</span> A published portfolio on LinkedIn and GitHub</div>
+      <div class="contrast-item"><span class="check-mark">✓</span> Confidence to speak about AI in any room</div>
+      <div class="contrast-item"><span class="check-mark">✓</span> A profile that looks worth more to the market</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STATS ─── -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-number">53%</div>
+      <div class="stat-label">higher median salaries for AI-skilled roles in India</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">70%</div>
+      <div class="stat-label">of job skills expected to change by 2030 — per LinkedIn</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">33%</div>
+      <div class="stat-label">YoY growth in India's AI hiring — Stanford HAI 2025</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">1,000+</div>
+      <div class="stat-label">engineers trained by Priyam, placed at top companies</div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── PROJECTS ─── -->
+<section class="projects">
+  <div class="section-label">What you build</div>
+  <h2 class="section-title">7 industry-style AI projects.<br>Not toy demos. Real proof.</h2>
+  <p class="section-sub">
+    Each project is guided end-to-end. You build it, understand it, document it, and publish it — so it actually shows
+    up on your resume and LinkedIn. Showing the world you're AI-ready is just as important as learning AI.
+  </p>
+  <div class="projects-grid">
+    <div class="project-card">
+      <span class="project-number">PROJECT 1</span>
+      <span class="project-tag">Learn with AI</span>
+      <h3>AI-Powered Learning Document</h3>
+      <p>Learn a topic deeply using AI, then turn it into a blog post, explainer, or internal tutorial. Builds the habit
+        that matters most in modern tech: learning fast, understanding clearly, and making that learning visible.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-number">PROJECT 2</span>
+      <span class="project-tag">ML Foundations</span>
+      <h3>Training Your Own ML Model</h3>
+      <p>Stop treating ML like magic. Train a real model, break down how learning actually happens, and build intuition
+        around data, optimization, and model behavior. Makes your AI understanding look genuinely technical — not just
+        "I used some tools."</p>
+    </div>
+    <div class="project-card">
+      <span class="project-number">PROJECT 3</span>
+      <span class="project-tag">ML Foundations</span>
+      <h3>Gradient Descent Visualiser</h3>
+      <p>Understand how models learn by building the mechanism that drives it. This gives you the foundation to explain
+        AI decisions confidently in any technical or non-technical conversation.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-number">PROJECT 4</span>
+      <span class="project-tag">GenAI</span>
+      <h3>Image Generation Workflow</h3>
+      <p>Go from consuming cool tools to actually using them for product design, marketing, and idea testing. Build
+        generative image workflows that showcase modern, cross-functional AI thinking.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-number">PROJECT 5</span>
+      <span class="project-tag">GenAI</span>
+      <h3>AI Video Content System</h3>
+      <p>Apply video generation AI to a real-world use case. These projects make your profile look more modern,
+        practical, and versatile — useful far beyond "AI-only" roles.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-number">PROJECT 6</span>
+      <span class="project-tag">Agentic AI</span>
+      <h3>AI News Intelligence Agent</h3>
+      <p>Build a multi-step agent that monitors news, surfaces insights, and delivers structured output. This is closer
+        to a real workflow than any classroom exercise — the kind of project that generates interview conversations.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-number">PROJECT 7</span>
+      <span class="project-tag">Agentic AI · Capstone</span>
+      <h3>Document Review Automation</h3>
+      <p>Build a business-use-case AI agent that reviews documents and extracts structured information. The full-stack
+        capstone. Publish it. Put it on your resume. Talk about it in interviews. This is proof.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INSTRUCTOR ─── -->
+<section class="instructor">
+  <div class="instructor-layout">
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="instructor-photo">
+        <img
+          src="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_3:4/PXL_20250213_140454812_loaliq"
+          srcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_300,c_fill,ar_3:4/PXL_20250213_140454812_loaliq 300w,
+                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_500,c_fill,ar_3:4/PXL_20250213_140454812_loaliq 500w,
+                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_700,c_fill,ar_3:4/PXL_20250213_140454812_loaliq 700w"
+          sizes="(max-width: 768px) 220px, 300px"
+          width="600"
+          height="800"
+          loading="lazy"
+          decoding="async"
+          alt="Priyam Dalmia"
+          style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="instructor-photo">
+        <img
+          src="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_3:4/IMG_0384_vxlfz6"
+          srcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_300,c_fill,ar_3:4/IMG_0384_vxlfz6 300w,
+                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_500,c_fill,ar_3:4/IMG_0384_vxlfz6 500w,
+                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_700,c_fill,ar_3:4/IMG_0384_vxlfz6 700w"
+          sizes="(max-width: 768px) 220px, 300px"
+          width="600"
+          height="800"
+          loading="lazy"
+          decoding="async"
+          alt="Priyam Dalmia"
+          style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
+    <div>
+      <div class="instructor-badge">Your Instructor</div>
+      <h2>Priyam Dalmia</h2>
+      <div class="instructor-title">AI Research Engineer @ Google &nbsp;·&nbsp; Founder, Inspire AI</div>
+      <ul class="credential-list">
+        <li>IIT Kharagpur alumnus</li>
+        <li>AI Research Engineer at Google (current)</li>
+        <li>Ex–Microsoft Research (internship — self-taught, no ML background)</li>
+        <li>Ex–American Express AI/ML team</li>
+        <li>Taught 1,000+ engineers via live workshops & courses</li>
+        <li>Students placed at Apple, Goldman Sachs, JP Morgan, Zepto, Flipkart</li>
+      </ul>
+      <div class="instructor-story">
+        <strong>My first AI role came after many rejections.</strong>
+        <br><br>
+        I studied Aerospace and worked in fluid dynamics research. I knew I wanted to move into AI — but nobody was
+        there to tell me which projects to build, how to do them, or how to present them. I figured it out by doing.
+        <br><br>
+        Once I built the right projects and showed them properly, I landed Microsoft Research. That one move changed the
+        trajectory of my career — and eventually led me to Google.
+        <br><br>
+        <strong>The gap isn't intelligence. It's practice and direction.</strong> That's exactly why Inspire AI exists —
+        to give every engineer the blueprint I had to discover the hard way.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRANSFORMATION ─── -->
+<section class="transformation">
+  <div class="centered">
+    <div class="section-label">What changes</div>
+    <h2 class="section-title">Where you'll be when you finish.</h2>
+    <p class="section-sub">Not just more knowledge — a genuinely different profile.</p>
+  </div>
+  <div class="transform-grid">
+    <div class="transform-item">
+      <div class="transform-from">AI Confusion — buzzwords everywhere</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">AI Clarity — a real mental model of how systems work</div>
+    </div>
+    <div class="transform-item">
+      <div class="transform-from">Watching tutorials, saving content</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">Building real AI applications and workflows</div>
+    </div>
+    <div class="transform-item">
+      <div class="transform-from">Prompt tricks and surface-level hacks</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">First-principles understanding: models, data, systems</div>
+    </div>
+    <div class="transform-item">
+      <div class="transform-from">Projects buried on your laptop</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">Published portfolio on LinkedIn and GitHub</div>
+    </div>
+    <div class="transform-item">
+      <div class="transform-from">Nodding quietly in AI discussions</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">Confidently explaining AI concepts and decisions</div>
+    </div>
+    <div class="transform-item">
+      <div class="transform-from">Career anxiety — AI might replace me</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">Career leverage — AI becomes your strongest asset</div>
+    </div>
+    <div class="transform-item">
+      <div class="transform-from">Profile looks like everyone else's</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">More shortlisting, better interviews, stronger market value</div>
+    </div>
+    <div class="transform-item">
+      <div class="transform-from">Learning from random internet creators</div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-to">Mentor-guided growth from a real AI engineer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section class="testimonials">
+  <div class="centered">
+    <div class="section-label">What learners say</div>
+    <h2 class="section-title">Real engineers. Real outcomes.</h2>
+    <p class="section-sub">These are actual quotes from people who completed the program — not generated testimonials.
+    </p>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">The course helped me easily add three solid projects to my resume. The modules
+        prepared me for follow-up questions interviewers had for me on the projects. Loved the end-to-end nature of the
+        project. 10/10 recommended for anyone looking to get their hands dirty with ML.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Seemant Achari</div>
+        <div class="testimonial-company">Apple</div>
+        <div class="testimonial-context">SDE background → ML path</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">Every resource was either too shallow or too overwhelming — this course made
+        everything intuitive. What amazed me most was how much I learned in such a short time without feeling
+        overwhelmed. It truly was my game-changer for cracking a Day 1 interview.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Khushi Verma</div>
+        <div class="testimonial-company">Goldman Sachs</div>
+        <div class="testimonial-context">Day 1 campus placement</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">I had zero knowledge in ML and this course created a great interest in me. I completed
+        the full project and added it to my resume. In my Flipkart interview for a Supply Chain & PM role, they asked me
+        a lot about this project — and I got the offer.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Anwesha Ghosh</div>
+        <div class="testimonial-company">Flipkart</div>
+        <div class="testimonial-context">Product Management role, Day 1 placement</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">It felt like hitting a reset button on my fundamentals — covering everything I'd
+        forgotten in such a short time but in a way that didn't feel rushed or shallow. Thanks to this course, I felt
+        fully prepared no matter what the interviews threw at me.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Akshat Ansh Nayak</div>
+        <div class="testimonial-company">Accenture</div>
+        <div class="testimonial-context">3 years ML experience → refreshed foundations</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">This course was a complete game-changer as I prepared for my interview. It managed to
+        deliver both the big picture and the important details in a way that felt easy to grasp. For the first time, I
+        felt like I had a guide that covered everything I needed without the overwhelm.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Priyanshu Shaw</div>
+        <div class="testimonial-company">Zepto</div>
+        <div class="testimonial-context">Landed offer after completing the program</div>
+      </div>
+    </div>
+    <div class="testimonial-card" style="background: var(--navy); border-color: rgba(0,200,83,0.3);">
+      <div class="testimonial-quote" style="color: var(--green);">"</div>
+      <p class="testimonial-text" style="color: #CBD5E1;">This project will be very useful as it will play a major role
+        in my resume. The session helped me create a project and mention it in my resume — it widened my knowledge about
+        resume building.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name" style="color: var(--white);">Workshop Participant</div>
+        <div class="testimonial-company">AZ AI/ML Workshop</div>
+        <div class="testimonial-context" style="color: #CBD5E1;">From live workshop feedback</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CURRICULUM ─── -->
+<section class="curriculum">
+  <div class="centered">
+    <div class="section-label" style="color: #4ade80;">The course</div>
+    <h2 class="section-title">8 structured modules. No long playlists.</h2>
+    <p class="section-sub">Short, focused modules built for working professionals with a busy schedule. Intuition-first,
+      not math-heavy. Roughly 100 minutes of lectures, 150 minutes of guided activities — completable alongside your job
+      in a few weeks.</p>
+  </div>
+  <div class="module-list">
+    <div class="module-item">
+      <div class="module-num">01</div>
+      <div class="module-content">
+        <h3>Introduction to Machine Intelligence</h3>
+        <p>Build a clear mental model of what AI and ML actually are. Not buzzwords — real understanding. How systems
+          learn, why they work, where they fail.</p>
+        <span class="module-tag">Foundations</span>
+      </div>
+    </div>
+    <div class="module-item">
+      <div class="module-num">02</div>
+      <div class="module-content">
+        <h3>Machine Learning Fundamentals</h3>
+        <p>Data, models, training — broken down clearly. Understand the building blocks that every modern AI system sits
+          on top of.</p>
+        <span class="module-tag">Foundations</span>
+        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">Project</span>
+      </div>
+    </div>
+    <div class="module-item">
+      <div class="module-num">03</div>
+      <div class="module-content">
+        <h3>How Models Actually Learn — Gradient Descent</h3>
+        <p>The mechanism behind all model training. You'll stop treating ML as a black box and start understanding
+          what's actually happening under the surface.</p>
+        <span class="module-tag">Foundations</span>
+        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">Project</span>
+      </div>
+    </div>
+    <div class="module-item">
+      <div class="module-num">04</div>
+      <div class="module-content">
+        <h3>Generative AI — LLMs, Prompting & Modern Systems</h3>
+        <p>Large language models explained properly. What they are, how they're trained, why they behave the way they
+          do. Industry context included.</p>
+        <span class="module-tag">GenAI</span>
+      </div>
+    </div>
+    <div class="module-item">
+      <div class="module-num">05</div>
+      <div class="module-content">
+        <h3>Image & Video Generation AI</h3>
+        <p>How modern generative image and video models work — applied to real use cases in product, design, and content
+          creation.</p>
+        <span class="module-tag">GenAI</span>
+        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">2 Projects</span>
+      </div>
+    </div>
+    <div class="module-item">
+      <div class="module-num">06</div>
+      <div class="module-content">
+        <h3>Coding with AI</h3>
+        <p>How to use AI as a serious engineering tool — not just autocomplete. Build faster, think clearer, and produce
+          output that shows real technical depth.</p>
+        <span class="module-tag">Applied AI</span>
+        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">Project</span>
+      </div>
+    </div>
+    <div class="module-item">
+      <div class="module-num">07</div>
+      <div class="module-content">
+        <h3>Agentic AI — State-of-the-Art Systems</h3>
+        <p>Multi-step agents, orchestration, real-world applications. The cutting edge — explained clearly. Build agents
+          that solve business problems, not just demos.</p>
+        <span class="module-tag">Agents</span>
+        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">2 Projects</span>
+      </div>
+    </div>
+    <div class="module-item">
+      <div class="module-num">08</div>
+      <div class="module-content">
+        <h3>Showcase & Portfolio Publishing</h3>
+        <p>How to document, present, and publish your projects on LinkedIn and GitHub so recruiters actually notice
+          them. Showing the world you're AI-ready is just as important as being AI-ready.</p>
+        <span class="module-tag">Career Impact</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ─── -->
+<section class="pricing" id="enroll">
+  <div class="centered">
+    <div class="section-label">Enroll</div>
+    <h2 class="section-title">One investment. Proof that lasts.</h2>
+    <p class="section-sub">AI-skilled roles in India pay 53% more at the median. This course is the structured path to
+      getting there.</p>
+  </div>
+  <div class="pricing-box">
+    <div class="pricing-header">
+      <div class="pricing-label">Complete Program</div>
+      <h3>Inspire AI — Build, Prove, Get Noticed</h3>
+    </div>
+    <div class="pricing-body">
+      <div class="price-row">
+        <div class="price-current">₹2,899</div>
+        <div class="price-original">₹4,499</div>
+      </div>
+      <div class="price-save">You save ₹1,600 — Limited-time pricing</div>
+      <ul class="pricing-includes">
+        <li>All 8 structured modules — short & focused</li>
+        <li>7 fully guided, industry-style projects</li>
+        <li>Portfolio publishing system (LinkedIn + GitHub)</li>
+        <li>Quizzes and exercises throughout</li>
+        <li>Certificate of completion</li>
+        <li>Lifetime access — learn at your pace</li>
+        <li>Works alongside your job — complete in 4–8 weeks</li>
+      </ul>
+      <a href="https://inspireai.freshlearn.com/checkout/Course/38910" class="btn-enroll">Enroll Now — ₹2,899</a>
+      <div class="pricing-guarantee">
+        🔒 &nbsp; Secure checkout &nbsp;·&nbsp; Questions? Email us before enrolling
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section class="faq">
+  <div class="centered">
+    <div class="section-label">Questions</div>
+    <h2 class="section-title">Common things people ask.</h2>
+    <p class="section-sub">Straight answers — no fluff.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question">Do I need coding experience?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">No coding experience is required to start. The course is built for working professionals
+        with a tech or engineering background who want to understand and build with AI — not for computer science
+        graduates who already have ML training. If you already code, you'll find the project work even more hands-on and
+        useful.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">I already code. Is this too basic for me?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">No. This teaches the <em>AI layer</em> — not programming basics. Many engineers who code
+        every day have never trained a model, built an agent, or published an AI project on their portfolio. If you can
+        build, this course gives you the AI knowledge and project proof to translate that into career growth. Most
+        engineers who've taken this found the projects challenging and the foundations refreshing.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How long will this take? I'm busy.<span class="faq-icon">+</span></div>
+      <div class="faq-answer">The program is designed for working professionals. There are roughly 100 minutes of
+        lecture content and 150 minutes of guided activity/project content — plus quizzes and exercises. Most people
+        complete it comfortably alongside their job in 4–8 weeks at a few hours per week. The modules are short and
+        focused — no binge-watching required.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What will my portfolio actually look like after this?<span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">You'll have 7 documented, published projects spanning: AI-powered learning content,
+        trained ML models, GenAI applications (image and video), and two agentic AI systems. Each project comes with
+        guided publishing instructions so you can put them on LinkedIn and GitHub where recruiters actually look. These
+        are not toy demos — they're the kind of projects that generate interview conversations.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Why should I learn from Priyam specifically?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">Because he actually works at the edge of AI at Google — not just teaching about it. His
+        content is not GPT-generated scripts. He's an IIT Kharagpur alumnus who made the same journey many of you are
+        considering — no AI background to Microsoft Research, to American Express AI/ML, to Google AI Research. He knows
+        the technology deeply, he knows how recruiters respond, and he has already led 1,000+ engineers through this
+        kind of learning. Most AI "educators" online are content creators. Priyam is an engineer who teaches.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Will this help me even if my job isn't "AI"?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">Yes — that's one of the key insights behind this program. AI projects improve your market
+        value regardless of your current role. Anwesha Ghosh used her project to land a Product Management role at
+        Flipkart. Seemant Achari used it to move from SDE to an ML path at Apple. The market responds to visible proof
+        of capability — not job titles.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Is there a refund policy?<span class="faq-icon">+</span></div>
+      <div class="faq-answer">Yes. If the course isn't what you expected, reach out within 7 days and we'll make it
+        right. We'd rather you get value than keep your money.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FINAL CTA ─── -->
+<section class="final-cta">
+  <h2>The AI opportunity is real.<br><em>The question is how you use it.</em></h2>
+  <p>
+    Most people will keep watching tools, collecting reels, and wondering why nothing's changing. You don't have to be
+    one of them.
+  </p>
+  <div class="final-cta-btns">
+    <a href="https://inspireai.freshlearn.com/checkout/Course/38910" class="btn-primary"
+      style="font-size: 1.05rem; padding: 16px 32px;">Enroll Now — ₹2,899</a>
+  </div>
+  <p style="margin-top: 24px; font-size: 0.82rem; color: #94A3B8;">
+    No coding experience required &nbsp;·&nbsp; Complete alongside your job &nbsp;·&nbsp; 1,000+ engineers trained
+  </p>
+</section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Inspire<span>.ai</span></div>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2025 Inspire AI &nbsp;·&nbsp; Built by Priyam Dalmia &nbsp;·&nbsp; IIT Kharagpur · AI Research @ Google
+  </div>
+</footer>
+</body>
+</html>
