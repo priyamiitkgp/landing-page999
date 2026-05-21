@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en-IN">
 <head>
-  <!-- Google Tag Manager -->
   <script>
   (function(w,d,s,l,i){
     w[l]=w[l]||[];
@@ -14,21 +13,11 @@
     f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-N2D8PJHW');
   </script>
-  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inspire AI — Build AI Projects, Prove Your Skills</title>
   <meta name="description" content="A structured AI program for engineers to build 7 industry-style AI projects, publish a portfolio, and gain practical AI confidence.">
   <meta name="robots" content="index, follow">
-  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
-  <link rel="preload" as="image"
-        href="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq"
-        imagesrcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_400,c_fill,ar_4:5/IMG_0863_jn6fdq 400w,
-                     https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_4:5/IMG_0863_jn6fdq 600w,
-                     https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq 800w,
-                     https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_1000,c_fill,ar_4:5/IMG_0863_jn6fdq 1000w"
-        imagesizes="(max-width: 900px) 400px, 420px"
-        fetchpriority="high">
 <style>
   *,
   *::before,
@@ -39,17 +28,20 @@
   }
 
   :root {
-    --green: #00C853;
-    --green-dark: #007A1F;
-    --navy: #0A0F1E;
+    /* Premium Color Palette */
+    --green: #10B981; /* Emerald */
+    --green-dark: #047857;
+    --navy: #090E17; /* Richer, deeper navy */
     --navy-light: #111827;
-    --navy-mid: #1a2235;
+    --navy-mid: #1E293B;
     --white: #FFFFFF;
-    --off-white: #F8F9FC;
+    --off-white: #FAFAFC;
     --gray: #9CA3AF;
-    --gray-light: #E5E7EB;
+    --gray-light: #E2E8F0;
     --amber: #F59E0B;
+    --purple: #8B5CF6;
     --text: #1F2937;
+    --glow: 0 8px 24px rgba(16, 185, 129, 0.25);
   }
 
   html {
@@ -57,7 +49,7 @@
   }
 
   body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
     color: var(--text);
     background: var(--white);
     line-height: 1.6;
@@ -70,20 +62,22 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(10, 15, 30, 0.97);
-        padding: 0 5%;
+    background: rgba(9, 14, 23, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    height: 72px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     width: 100%;
     margin: 0;
   }
 
   .nav-logo {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 800;
     color: var(--white);
     letter-spacing: -0.3px;
   }
@@ -93,27 +87,30 @@
   }
 
   .nav-cta {
-    background: var(--green);
-    color: #000;
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    color: var(--white);
     font-weight: 700;
     font-size: 0.88rem;
-    padding: 9px 20px;
-    border-radius: 6px;
+    padding: 10px 22px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: background 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+    transition: all 0.2s ease;
   }
 
   .nav-cta:hover {
-    background: #33d76b;
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+    transform: translateY(-1px);
   }
 
   /* ─── HERO ─── */
   .hero-layout {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1.3fr 0.7fr; 
     gap: 48px;
     align-items: center;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: left;
   }
@@ -129,26 +126,33 @@
     justify-content: flex-start;
   }
 
-  .hero-image {
+  .hero-video-wrapper {
     width: 100%;
-    border-radius: 12px;
-    border: 2px solid rgba(0, 200, 83, 0.25);
+    max-width: 340px; 
+    margin: 0 auto;
+    border-radius: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     background: var(--navy-mid);
-    aspect-ratio: 4/5;
+    aspect-ratio: 9/16; 
+    position: relative;
   }
 
-  .hero-image img {
+  .hero-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border: none;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 960px) {
     .hero-layout {
       grid-template-columns: 1fr;
       text-align: center;
-      gap: 32px;
+      gap: 48px;
     }
 
     .hero-layout h1,
@@ -161,54 +165,65 @@
     .hero-layout .hero-trust {
       justify-content: center;
     }
-
-    .hero-image {
-      max-width: 400px;
-      margin: 0 auto;
-    }
   }
 
   .hero {
     background: var(--navy);
     color: var(--white);
-    padding: 80px 5% 72px;
+    padding: 100px 5% 80px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(9, 14, 23, 0) 70%);
+    pointer-events: none;
   }
 
   .hero-eyebrow {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(0, 200, 83, 0.12);
-    border: 1px solid rgba(0, 200, 83, 0.3);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
     color: var(--green);
     font-size: 0.82rem;
     font-weight: 600;
-    letter-spacing: 0.3px;
-    padding: 6px 14px;
+    letter-spacing: 0.5px;
+    padding: 6px 16px;
     border-radius: 100px;
     margin-bottom: 28px;
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-size: clamp(2.4rem, 5vw, 4rem);
     font-weight: 800;
-    line-height: 1.13;
-    letter-spacing: -1px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
     max-width: 820px;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
   }
 
   .hero h1 em {
     font-style: normal;
-    color: var(--green);
+    background: linear-gradient(to right, #34D399, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .hero-sub {
-    font-size: clamp(1.05rem, 2vw, 1.22rem);
-    color: #CBD5E1;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    color: #94A3B8;
     max-width: 620px;
-    margin: 0 auto 36px;
+    margin: 0 auto 40px;
     line-height: 1.7;
   }
 
@@ -216,47 +231,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 44px;
   }
 
   .btn-primary {
-    background: var(--green);
-    color: #000;
-    font-weight: 800;
-    font-size: 1rem;
-    padding: 14px 30px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 16px 36px;
+    border-radius: 10px;
     text-decoration: none;
-    transition: transform 0.15s, background 0.15s;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: var(--glow);
+    transition: all 0.3s ease;
     display: inline-block;
   }
 
   .btn-primary:hover {
-    background: #33d76b;
-    transform: translateY(-1px);
-  }
-
-  .btn-secondary {
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: var(--white);
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 13px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: border-color 0.15s;
-  }
-
-  .btn-secondary:hover {
-    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 12px 28px rgba(16, 185, 129, 0.4);
+    transform: translateY(-2px);
   }
 
   .hero-trust {
-    font-size: 0.84rem;
-    color: #94A3B8;
+    font-size: 0.88rem;
+    color: #64748B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,43 +273,36 @@
   /* ─── SOCIAL PROOF BAR ─── */
   .proof-bar {
     background: var(--navy-light);
-    padding: 20px 5%;
+    padding: 24px 5%;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   }
 
   .proof-bar-label {
-    font-size: 0.78rem;
-    color: #CBD5E1;
+    font-size: 0.75rem;
+    color: #64748B;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    font-weight: 600;
-    margin-bottom: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
 
   .proof-logos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 32px;
     flex-wrap: wrap;
   }
 
   .proof-logo {
-    font-size: 0.92rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #94A3B8;
-    letter-spacing: 0.5px;
-  }
-
-  .proof-logo-sep {
-    width: 1px;
-    height: 18px;
-    background: rgba(255, 255, 255, 0.1);
+    letter-spacing: -0.2px;
   }
 
   /* ─── SECTION COMMONS ─── */
-  .hero,
   .problem,
   .contrast,
   .projects,
@@ -319,33 +313,33 @@
   .pricing,
   .faq,
   .final-cta {
-    padding: 80px 5%;
+    padding: 100px 5%;
   }
 
   .section-label {
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: var(--green-dark);
+    color: var(--green);
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-bottom: 12px;
-  }
-
-  .section-title {
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-    color: var(--navy);
     margin-bottom: 16px;
   }
 
+  .section-title {
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: var(--navy);
+    margin-bottom: 20px;
+  }
+
   .section-sub {
-    font-size: 1.08rem;
-    color: #374151;
-    max-width: 600px;
+    font-size: 1.15rem;
+    color: #4B5563;
+    max-width: 640px;
     line-height: 1.7;
-    margin-bottom: 48px;
+    margin-bottom: 56px;
   }
 
   .centered {
@@ -353,7 +347,7 @@
   }
 
   .centered .section-sub {
-    margin: 0 auto 48px;
+    margin: 0 auto 56px;
   }
 
   /* ─── PROBLEM SECTION ─── */
@@ -365,32 +359,38 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
-    margin-top: 48px;
   }
 
   .problem-card {
     background: var(--white);
     border: 1px solid var(--gray-light);
-    border-radius: 12px;
-    padding: 28px 24px;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .problem-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
   }
 
   .problem-icon {
-    font-size: 1.6rem;
-    margin-bottom: 14px;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 
   .problem-card h3 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--navy);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .problem-card p {
-    font-size: 0.93rem;
+    font-size: 0.95rem;
     color: #6B7280;
-    line-height: 1.65;
+    line-height: 1.7;
   }
 
   /* ─── CONTRAST / TRUTH SECTION ─── */
@@ -411,29 +411,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-    max-width: 860px;
+    max-width: 900px;
     margin: 0 auto;
   }
 
   .contrast-col {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 28px 24px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px 32px;
   }
 
   .contrast-col.good {
-    background: rgba(0, 200, 83, 0.07);
-    border-color: rgba(0, 200, 83, 0.25);
+    background: rgba(16, 185, 129, 0.05);
+    border-color: rgba(16, 185, 129, 0.2);
+    box-shadow: 0 10px 40px rgba(16, 185, 129, 0.05);
   }
 
   .contrast-col h3 {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
-    color: #6B7280;
+    letter-spacing: 1.5px;
+    margin-bottom: 24px;
+    color: #64748B;
   }
 
   .contrast-col.good h3 {
@@ -443,89 +444,117 @@
   .contrast-item {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
-    font-size: 0.95rem;
-    color: #CBD5E1;
-    margin-bottom: 12px;
-    line-height: 1.5;
+    gap: 12px;
+    font-size: 1rem;
+    color: #94A3B8;
+    margin-bottom: 16px;
+    line-height: 1.6;
   }
 
   .contrast-col.good .contrast-item {
-    color: var(--white);
+    color: var(--gray-light);
   }
 
   .x-mark {
-    color: #B91C1C;
-    font-weight: 700;
+    color: #EF4444;
+    font-weight: 800;
     flex-shrink: 0;
-    margin-top: 1px;
   }
 
   .check-mark {
     color: var(--green);
-    font-weight: 700;
+    font-weight: 800;
     flex-shrink: 0;
-    margin-top: 1px;
   }
 
   /* ─── STATS BAR ─── */
   .stats-bar {
-    background: var(--green);
-    padding: 36px 5%;
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    padding: 48px 5%;
   }
 
   .stats-inner {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 48px;
+    align-items: flex-start;
+    gap: 64px;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
   .stat-item {
     text-align: center;
+    flex: 1;
+    min-width: 180px;
   }
 
   .stat-number {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 900;
-    color: #000;
+    color: var(--white);
     line-height: 1;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
   }
 
   .stat-label {
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: #1a3a1a;
-    max-width: 160px;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
   }
 
   /* ─── PROJECTS ─── */
   .projects {
     background: var(--white);
+    padding-top: 40px; /* Adjusted since sneak peek is right above */
+  }
+
+  .sneak-peek {
+    padding: 100px 5% 40px;
+    background: var(--white);
+  }
+  
+  .sneak-peek-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .sneak-peek-img {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--gray-light);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+  }
+
+  .sneak-peek-img:hover {
+    transform: translateY(-4px);
   }
 
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
   }
 
   .project-card {
+    background: var(--white);
     border: 1px solid var(--gray-light);
-    border-radius: 12px;
-    padding: 24px;
+    border-radius: 16px;
+    padding: 32px;
     position: relative;
-    transition: box-shadow 0.2s, border-color 0.2s;
+    transition: all 0.3s ease;
   }
 
   .project-card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    border-color: var(--green);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+    border-color: rgba(16, 185, 129, 0.3);
+    transform: translateY(-4px);
   }
 
   .project-number {
@@ -534,42 +563,44 @@
     color: var(--white);
     font-size: 0.72rem;
     font-weight: 800;
-    padding: 3px 10px;
+    padding: 4px 12px;
     border-radius: 100px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     letter-spacing: 0.5px;
   }
 
   .project-tag {
     display: inline-block;
-    background: rgba(0, 200, 83, 0.1);
+    background: rgba(16, 185, 129, 0.1);
     color: var(--green-dark);
     font-size: 0.72rem;
     font-weight: 700;
-    padding: 3px 10px;
+    padding: 4px 12px;
     border-radius: 100px;
-    margin-bottom: 12px;
-    margin-left: 6px;
+    margin-bottom: 16px;
+    margin-left: 8px;
     letter-spacing: 0.5px;
   }
 
   .project-card h3 {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.15rem;
+    font-weight: 800;
     color: var(--navy);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
   }
 
   .project-card p {
-    font-size: 0.88rem;
-    color: #6B7280;
-    line-height: 1.65;
+    font-size: 0.95rem;
+    color: #4B5563;
+    line-height: 1.7;
   }
 
   /* ─── INSTRUCTOR ─── */
   .instructor {
     background: var(--navy);
     color: var(--white);
+    position: relative;
   }
 
   .instructor .section-title {
@@ -578,66 +609,75 @@
 
   .instructor-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 48px;
-    align-items: start;
-    max-width: 900px;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 64px;
+    align-items: center;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
-  .instructor-photo {
+  .instructor-video-wrapper {
     width: 100%;
-    border-radius: 12px;
-    background: var(--navy-mid);
-    aspect-ratio: 3/4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: var(--green);
-    border: 2px solid rgba(0, 200, 83, 0.25);
+    max-width: 340px; 
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    background: var(--navy-mid);
+    aspect-ratio: 9/16; 
+    position: relative;
+  }
+
+  .instructor-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 
   .instructor-badge {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
-    background: rgba(0, 200, 83, 0.12);
-    border: 1px solid rgba(0, 200, 83, 0.3);
+    gap: 8px;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
     color: var(--green);
     font-size: 0.8rem;
     font-weight: 600;
-    padding: 5px 12px;
+    padding: 6px 14px;
     border-radius: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .instructor h2 {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
     font-weight: 800;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
   }
 
   .instructor-title {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--green);
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 
   .credential-list {
     list-style: none;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
   }
 
   .credential-list li {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 0.95rem;
+    gap: 12px;
+    font-size: 1rem;
     color: #CBD5E1;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .credential-list li::before {
@@ -648,65 +688,90 @@
   }
 
   .instructor-story {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.03);
     border-left: 3px solid var(--green);
-    padding: 20px 20px;
-    border-radius: 0 8px 8px 0;
-    font-size: 0.93rem;
-    color: #CBD5E1;
+    padding: 24px 28px;
+    border-radius: 0 12px 12px 0;
+    font-size: 0.95rem;
+    color: #94A3B8;
     line-height: 1.7;
   }
 
   .instructor-story strong {
-    color: var(--white);
+    color: var(--gray-light);
   }
 
-  /* ─── TRANSFORMATION ─── */
+  /* ─── TRANSFORMATION (REDESIGNED) ─── */
   .transformation {
     background: var(--off-white);
   }
 
-  .transform-grid {
+  .transform-split {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 960px;
+    margin: 0 auto;
   }
 
-  @media (max-width: 1024px) {
-    .transform-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .transform-item {
+  .transform-col {
     background: var(--white);
     border: 1px solid var(--gray-light);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
   }
 
-  .transform-from {
-    font-size: 0.88rem;
-    color: #6B7280;
-    text-decoration: line-through;
-    line-height: 1.4;
+  .transform-col.after {
+    background: var(--navy);
+    border-color: rgba(16, 185, 129, 0.3);
+    box-shadow: 0 16px 40px rgba(16, 185, 129, 0.08);
   }
 
-  .transform-arrow {
-    color: var(--green);
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-
-  .transform-to {
-    font-size: 0.95rem;
-    font-weight: 600;
+  .col-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-light);
     color: var(--navy);
-    line-height: 1.4;
   }
+
+  .transform-col.after .col-title {
+    color: var(--white);
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
+  .transform-list {
+    list-style: none;
+  }
+
+  .transform-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1.05rem;
+    color: #4B5563;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .transform-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .transform-col.after .transform-list li {
+    color: #CBD5E1;
+  }
+
+  .transform-list .icon {
+    font-weight: 900;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .icon.x { color: #EF4444; }
+  .icon.check { color: var(--green); }
 
   /* ─── TESTIMONIALS ─── */
   .testimonials {
@@ -715,56 +780,155 @@
 
   .testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
   }
 
   .testimonial-card {
     background: var(--off-white);
     border: 1px solid var(--gray-light);
-    border-radius: 12px;
-    padding: 28px 24px;
+    border-radius: 16px;
+    padding: 32px;
     position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-4px);
   }
 
   .testimonial-quote {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: serif;
     color: var(--green);
     line-height: 1;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
 
   .testimonial-text {
-    font-size: 0.95rem;
-    color: #374151;
+    font-size: 1rem;
+    color: #4B5563;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-style: italic;
   }
 
   .testimonial-author {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
+  }
+
+  .testimonial-name-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .testimonial-name {
-    font-size: 0.92rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 800;
     color: var(--navy);
   }
 
+  .linkedin-icon {
+    display: inline-flex;
+    color: #0A66C2;
+    transition: opacity 0.2s;
+  }
+
+  .linkedin-icon:hover {
+    opacity: 0.8;
+  }
+
   .testimonial-company {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     color: var(--green-dark);
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .testimonial-context {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #6B7280;
-    margin-top: 2px;
   }
+
+
+
+  .workshop-feedback-card {
+    grid-column: 1 / -1;
+    background: var(--navy);
+    border: 1px solid rgba(16, 185, 129, 0.28);
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 20px 50px rgba(9, 14, 23, 0.12);
+  }
+
+  .workshop-feedback-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .workshop-feedback-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-bottom: 8px;
+  }
+
+  .workshop-feedback-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -0.4px;
+    line-height: 1.25;
+  }
+
+  .workshop-feedback-pill {
+    flex-shrink: 0;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: #A7F3D0;
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 8px 12px;
+    border-radius: 999px;
+  }
+
+  .workshop-feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .workshop-feedback-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 20px;
+  }
+
+  .workshop-feedback-item p {
+    color: #E2E8F0;
+    font-size: 0.96rem;
+    line-height: 1.65;
+    font-style: italic;
+  }
+
+  .workshop-feedback-item span {
+    display: block;
+    margin-top: 14px;
+    color: #94A3B8;
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
 
   /* ─── CURRICULUM ─── */
   .curriculum {
@@ -781,16 +945,16 @@
   }
 
   .module-list {
-    max-width: 720px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
   .module-item {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
-    padding: 18px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   .module-item:last-child {
@@ -798,12 +962,13 @@
   }
 
   .module-num {
-    background: rgba(0, 200, 83, 0.15);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
     color: var(--green);
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     font-weight: 800;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -812,29 +977,31 @@
   }
 
   .module-content h3 {
-    font-size: 0.97rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--white);
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 
   .module-content p {
-    font-size: 0.86rem;
+    font-size: 0.95rem;
     color: #94A3B8;
-    line-height: 1.55;
+    line-height: 1.6;
   }
 
   .module-tag {
     display: inline-block;
-    background: rgba(245, 158, 11, 0.15);
-    color: var(--amber);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-top: 6px;
-    margin-right: 4px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-top: 12px;
+    margin-right: 8px;
   }
+  
+  .tag-theory { background: rgba(245, 158, 11, 0.1); color: var(--amber); }
+  .tag-project { background: rgba(16, 185, 129, 0.15); color: #10B981; }
+  .tag-resume { background: rgba(139, 92, 246, 0.15); color: #8B5CF6; }
 
   /* ─── PRICING ─── */
   .pricing {
@@ -842,84 +1009,85 @@
   }
 
   .pricing-box {
-    max-width: 520px;
+    max-width: 560px;
     margin: 0 auto;
-    border: 2px solid var(--green);
-    border-radius: 16px;
+    background: var(--white);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 200, 83, 0.12);
+    box-shadow: 0 24px 60px rgba(16, 185, 129, 0.08);
   }
 
   .pricing-header {
     background: var(--navy);
-    padding: 28px 32px;
+    padding: 32px 40px;
     text-align: center;
     color: var(--white);
   }
 
   .pricing-label {
-    font-size: 0.78rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: var(--green);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .pricing-header h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin-bottom: 4px;
+    letter-spacing: -0.5px;
   }
 
   .pricing-body {
-    padding: 32px;
-    background: var(--white);
+    padding: 40px;
   }
 
   .price-row {
     display: flex;
     align-items: baseline;
-    gap: 12px;
-    margin-bottom: 8px;
+    gap: 16px;
+    margin-bottom: 12px;
   }
 
   .price-current {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     font-weight: 900;
     color: var(--navy);
     line-height: 1;
+    letter-spacing: -1.5px;
   }
 
   .price-original {
-    font-size: 1.2rem;
-    color: #6B7280;
+    font-size: 1.25rem;
+    color: #9CA3AF;
     text-decoration: line-through;
   }
 
   .price-save {
     display: inline-block;
-    background: rgba(239, 68, 68, 0.1);
-    color: #B91C1C;
-    font-size: 0.8rem;
-    font-weight: 700;
-    padding: 3px 8px;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--green-dark);
+    font-size: 0.85rem;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 32px;
   }
 
   .pricing-includes {
     list-style: none;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
   }
 
   .pricing-includes li {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.95rem;
-    color: #374151;
-    padding: 7px 0;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1rem;
+    color: #4B5563;
+    padding: 10px 0;
     border-bottom: 1px solid #F3F4F6;
   }
 
@@ -931,38 +1099,29 @@
     content: '✓';
     color: var(--green);
     font-weight: 900;
-    font-size: 0.9rem;
+    font-size: 1rem;
     flex-shrink: 0;
+    margin-top: 2px;
   }
 
   .btn-enroll {
     display: block;
     width: 100%;
-    background: var(--green);
-    color: #000;
-    font-weight: 900;
-    font-size: 1.08rem;
-    padding: 16px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.15rem;
+    padding: 18px;
+    border-radius: 12px;
     text-decoration: none;
     text-align: center;
-    transition: background 0.15s, transform 0.15s;
+    box-shadow: var(--glow);
+    transition: all 0.3s ease;
   }
 
   .btn-enroll:hover {
-    background: #33d76b;
-    transform: translateY(-1px);
-  }
-
-  .btn-free-below {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 14px;
-    font-size: 0.88rem;
-    color: #6B7280;
-    text-decoration: underline;
-    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(16, 185, 129, 0.4);
   }
 
   .pricing-guarantee {
@@ -970,53 +1129,83 @@
     align-items: center;
     gap: 8px;
     justify-content: center;
-    margin-top: 20px;
-    font-size: 0.82rem;
+    margin-top: 24px;
+    font-size: 0.85rem;
     color: #6B7280;
   }
 
-  /* ─── FAQ ─── */
+  /* ─── FAQ (UPDATED FOR ACCORDION) ─── */
   .faq {
-    background: var(--off-white);
+    background: var(--white);
   }
 
   .faq-list {
-    max-width: 720px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
   .faq-item {
     background: var(--white);
     border: 1px solid var(--gray-light);
-    border-radius: 10px;
-    margin-bottom: 12px;
+    border-radius: 12px;
+    margin-bottom: 16px;
     overflow: hidden;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  }
+
+  .faq-item.active {
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.05);
   }
 
   .faq-question {
-    padding: 20px 24px;
-    font-size: 0.97rem;
+    padding: 24px 32px;
+    font-size: 1.05rem;
     font-weight: 700;
     color: var(--navy);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
+    user-select: none;
   }
 
   .faq-question .faq-icon {
     color: var(--green);
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 300;
     flex-shrink: 0;
+    transition: transform 0.3s ease;
+    line-height: 1;
+  }
+
+  .faq-item.active .faq-question .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
 
   .faq-answer {
-    padding: 0 24px 20px;
-    font-size: 0.93rem;
-    color: #374151;
+    padding: 0 32px 24px;
+    font-size: 1rem;
+    color: #4B5563;
     line-height: 1.7;
+    border-top: 1px solid transparent;
+  }
+
+  .faq-item.active .faq-answer {
+    border-top-color: var(--off-white);
+    margin-top: -8px;
+    padding-top: 16px;
   }
 
   /* ─── FINAL CTA ─── */
@@ -1024,44 +1213,52 @@
     background: var(--navy);
     color: var(--white);
     text-align: center;
-    padding: 80px 5%;
+    padding: 100px 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(9, 14, 23, 0) 70%);
+    pointer-events: none;
   }
 
   .final-cta h2 {
-    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
     font-weight: 800;
-    line-height: 1.2;
-    max-width: 700px;
-    margin: 0 auto 16px;
-    letter-spacing: -0.5px;
+    line-height: 1.15;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    letter-spacing: -1px;
   }
 
   .final-cta h2 em {
     font-style: normal;
-    color: var(--green);
+    background: linear-gradient(to right, #34D399, #10B981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .final-cta p {
     color: #94A3B8;
-    font-size: 1.05rem;
-    max-width: 500px;
-    margin: 0 auto 36px;
-    line-height: 1.6;
-  }
-
-  .final-cta-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    flex-wrap: wrap;
+    font-size: 1.1rem;
+    max-width: 560px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
   }
 
   /* ─── FOOTER ─── */
   footer {
     background: var(--navy-light);
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 32px 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 40px 5%;
     text-align: center;
   }
 
@@ -1070,14 +1267,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
-    max-width: 900px;
+    gap: 24px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
   .footer-logo {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 800;
     color: var(--white);
   }
 
@@ -1087,90 +1284,180 @@
 
   .footer-links {
     display: flex;
-    gap: 20px;
+    gap: 24px;
   }
 
   .footer-links a {
-    font-size: 0.83rem;
-    color: #6B7280;
+    font-size: 0.9rem;
+    color: #64748B;
     text-decoration: none;
-    transition: color 0.15s;
+    transition: color 0.2s;
   }
 
   .footer-links a:hover {
-    color: var(--white);
+    color: var(--gray-light);
   }
 
   .footer-copy {
-    font-size: 0.78rem;
-    color: #374151;
+    font-size: 0.85rem;
+    color: #4B5563;
     width: 100%;
-    margin-top: 16px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.05);
   }
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 768px) {
     .instructor-layout {
       grid-template-columns: 1fr;
+      text-align: center;
     }
 
-    .instructor-photo {
-      aspect-ratio: 1/1;
-      max-width: 220px;
-      margin: 0 auto;
+    .instructor-story {
+      text-align: left;
     }
 
-    .contrast-grid {
+    .contrast-grid,
+    .transform-split,
+    .sneak-peek-grid,
+    .workshop-feedback-grid {
       grid-template-columns: 1fr;
     }
 
-    .transform-grid {
-      grid-template-columns: 1fr;
+    .workshop-feedback-head {
+      flex-direction: column;
     }
 
     .stats-inner {
-      gap: 28px;
+      gap: 32px;
+      flex-direction: column;
+      align-items: center;
     }
 
     .footer-inner {
       flex-direction: column;
       text-align: center;
     }
-  }
 
-  /* ─── DIVIDER ─── */
-  .wave-divider {
-    overflow: hidden;
-    line-height: 0;
+    /* Mobile polish: keep the existing design, but avoid stretched/awkward wrapping */
+    nav {
+      height: 64px;
+      padding: 0 5%;
+    }
+
+    .nav-logo {
+      font-size: 1.05rem;
+      letter-spacing: 0.8px;
+      white-space: nowrap;
+    }
+
+    .nav-cta {
+      font-size: 0.78rem;
+      padding: 9px 14px;
+      border-radius: 9px;
+      white-space: nowrap;
+      letter-spacing: 0.3px;
+    }
+
+    .hero,
+    .problem,
+    .contrast,
+    .projects,
+    .instructor,
+    .transformation,
+    .testimonials,
+    .curriculum,
+    .pricing,
+    .faq,
+    .final-cta {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .instructor {
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+
+    .instructor-layout {
+      gap: 34px;
+    }
+
+    .instructor-video-wrapper,
+    .hero-video-wrapper {
+      max-width: min(320px, 82vw);
+    }
+
+    .instructor h2 {
+      font-size: clamp(2rem, 10vw, 2.65rem);
+      line-height: 1.08;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .instructor-title {
+      font-size: 1rem;
+      line-height: 1.55;
+      text-align: center;
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
+    .credential-list {
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .credential-list li {
+      align-items: flex-start;
+      text-align: left;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .credential-list li::before {
+      margin-top: 0.55em;
+    }
+
+    .instructor-story {
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 22px 22px 22px 24px;
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+
+    .section-title {
+      letter-spacing: -0.6px;
+    }
+
   }
 </style>
-
-
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript>
+  <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2D8PJHW"
   height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- ─── NAV ─── -->
 <nav>
   <div class="nav-logo">Inspire<span>.ai</span></div>
-  <a href="https://jdzewp.flexifunnels.com/checkout-page-mr1abogr" class="nav-cta">Enroll Now — ₹2,899</a>
+  <a href="https://inspireai.freshlearn.com/checkout/Course/40821" class="nav-cta">Enroll Now — ₹1,999</a>
 </nav>
 
 <main>
 
-
-<!-- ─── HERO ─── -->
 <section class="hero">
   <div class="hero-layout">
     <div>
       <div class="hero-eyebrow">
-        By Priyam Dalmia &nbsp;·&nbsp; IIT Kharagpur &nbsp;·&nbsp; AI Research Engineer @ FAANG &nbsp;·&nbsp;
-        Ex-Microsoft
-        Research
+        By Priyam Dalmia &nbsp;·&nbsp; IIT Kharagpur &nbsp;·&nbsp; AI Research Engineer @ Google
       </div>
       <h1>
         Stop learning tools.<br>
@@ -1178,11 +1465,10 @@
       </h1>
       <p class="hero-sub">
         The structured AI program for engineers who want to go from overwhelmed to genuinely capable — with 7
-        industry-style
-        projects and a portfolio that turns heads in interviews and on LinkedIn.
+        industry-style projects and a portfolio that turns heads in interviews and on LinkedIn.
       </p>
       <div class="hero-ctas">
-        <a href="https://jdzewp.flexifunnels.com/checkout-page-mr1abogr" class="btn-primary">Enroll Now — ₹2,899</a>
+        <a href="https://inspireai.freshlearn.com/checkout/Course/40821" class="btn-primary">Enroll Now — ₹1,999</a>
       </div>
       <div class="hero-trust">
         <span>1,000+</span> engineers trained &nbsp;·&nbsp; Placed at
@@ -1190,45 +1476,32 @@
       </div>
     </div>
     <div>
-      <div class="hero-image">
-        <img
-          src="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq"
-          srcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_400,c_fill,ar_4:5/IMG_0863_jn6fdq 400w,
-                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_4:5/IMG_0863_jn6fdq 600w,
-                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_800,c_fill,ar_4:5/IMG_0863_jn6fdq 800w,
-                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_1000,c_fill,ar_4:5/IMG_0863_jn6fdq 1000w"
-          sizes="(max-width: 900px) 400px, 420px"
-          width="800"
-          height="1000"
-          alt="Priyam Dalmia"
-          fetchpriority="high"
-          decoding="async">
+      <div class="hero-video-wrapper">
+        <iframe 
+          loading="eager"
+          src="https://www.youtube.com/embed/BUoTBrZVJik?autoplay=1&mute=1&playsinline=1&modestbranding=1&rel=0&loop=1&playlist=BUoTBrZVJik" 
+          title="Inspire AI Introduction" 
+          allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>      
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── SOCIAL PROOF BAR ─── -->
 <div class="proof-bar">
   <div class="proof-bar-label">Our learners now work at</div>
   <div class="proof-logos">
     <div class="proof-logo">Apple</div>
-    <div class="proof-logo-sep"></div>
     <div class="proof-logo">Goldman Sachs</div>
-    <div class="proof-logo-sep"></div>
     <div class="proof-logo">JP Morgan</div>
-    <div class="proof-logo-sep"></div>
     <div class="proof-logo">Zepto</div>
-    <div class="proof-logo-sep"></div>
     <div class="proof-logo">Flipkart</div>
-    <div class="proof-logo-sep"></div>
     <div class="proof-logo">Accenture</div>
-    <div class="proof-logo-sep"></div>
     <div class="proof-logo">Microsoft</div>
   </div>
 </div>
 
-<!-- ─── PROBLEM ─── -->
 <section class="problem">
   <div class="section-label">Sound familiar?</div>
   <h2 class="section-title">You know AI matters.<br>You just haven't found the right way in.</h2>
@@ -1264,10 +1537,9 @@
   </div>
 </section>
 
-<!-- ─── CONTRAST ─── -->
 <section class="contrast">
   <div class="centered">
-    <div class="section-label" style="color: #4ade80;">The real difference</div>
+    <div class="section-label">The real difference</div>
     <h2 class="section-title">There are two types of people in the AI wave.</h2>
     <p class="section-sub">One type chases tools. The other builds understanding. The market rewards only one of them.
     </p>
@@ -1279,13 +1551,11 @@
       <div class="contrast-item"><span class="x-mark">✗</span> Watch long playlists without building anything</div>
       <div class="contrast-item"><span class="x-mark">✗</span> Collect prompt tips that won't impress a recruiter</div>
       <div class="contrast-item"><span class="x-mark">✗</span> Get "certified" without showing applied skill</div>
-      <div class="contrast-item"><span class="x-mark">✗</span> Stay stuck in the same salary bracket, wondering why
-      </div>
+      <div class="contrast-item"><span class="x-mark">✗</span> Stay stuck in the same salary bracket, wondering why</div>
     </div>
     <div class="contrast-col good">
       <h3>What Inspire AI builds</h3>
-      <div class="contrast-item"><span class="check-mark">✓</span> Genuine understanding of how AI models actually work
-      </div>
+      <div class="contrast-item"><span class="check-mark">✓</span> Genuine understanding of how AI models actually work</div>
       <div class="contrast-item"><span class="check-mark">✓</span> 7 real, industry-style projects — not toy demos</div>
       <div class="contrast-item"><span class="check-mark">✓</span> A published portfolio on LinkedIn and GitHub</div>
       <div class="contrast-item"><span class="check-mark">✓</span> Confidence to speak about AI in any room</div>
@@ -1294,7 +1564,6 @@
   </div>
 </section>
 
-<!-- ─── STATS ─── -->
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item">
@@ -1316,14 +1585,26 @@
   </div>
 </div>
 
-<!-- ─── PROJECTS ─── -->
+<section class="sneak-peek">
+  <div class="centered">
+    <div class="section-label">Inside the projects</div>
+    <h2 class="section-title">Visual proof of what you'll build.</h2>
+    <p class="section-sub">Stop watching tutorials. Start building interactive tools, visualizers, and workflows.</p>
+  </div>
+  <div class="sneak-peek-grid">
+    <img src="https://res.cloudinary.com/dt0o6mmyr/image/upload/q_auto/f_auto/v1779281347/image_1_efk8t2.jpg" alt="Gradient Descent Visualizer Project Preview" class="sneak-peek-img">
+    <img src="https://res.cloudinary.com/dt0o6mmyr/image/upload/q_auto/f_auto/v1779281347/image_2_kijva9.jpg" alt="AI Agent Workflow Interface Preview" class="sneak-peek-img">
+  </div>
+</section>
+
 <section class="projects">
-  <div class="section-label">What you build</div>
-  <h2 class="section-title">7 industry-style AI projects.<br>Not toy demos. Real proof.</h2>
-  <p class="section-sub">
-    Each project is guided end-to-end. You build it, understand it, document it, and publish it — so it actually shows
-    up on your resume and LinkedIn. Showing the world you're AI-ready is just as important as learning AI.
-  </p>
+  <div class="centered">
+    <h2 class="section-title">7 industry-style AI projects.<br>Not toy demos. Real proof.</h2>
+    <p class="section-sub" style="margin-bottom: 40px;">
+      Each project is guided end-to-end. You build it, understand it, document it, and publish it — so it actually shows
+      up on your resume and LinkedIn.
+    </p>
+  </div>
   <div class="projects-grid">
     <div class="project-card">
       <span class="project-number">PROJECT 1</span>
@@ -1378,37 +1659,17 @@
   </div>
 </section>
 
-<!-- ─── INSTRUCTOR ─── -->
 <section class="instructor">
   <div class="instructor-layout">
-    <div style="display: flex; flex-direction: column; gap: 24px;">
-      <div class="instructor-photo">
-        <img
-          src="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_3:4/PXL_20250213_140454812_loaliq"
-          srcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_300,c_fill,ar_3:4/PXL_20250213_140454812_loaliq 300w,
-                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_500,c_fill,ar_3:4/PXL_20250213_140454812_loaliq 500w,
-                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_700,c_fill,ar_3:4/PXL_20250213_140454812_loaliq 700w"
-          sizes="(max-width: 768px) 220px, 300px"
-          width="600"
-          height="800"
-          loading="lazy"
-          decoding="async"
-          alt="Priyam Dalmia"
-          style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
-      <div class="instructor-photo">
-        <img
-          src="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_600,c_fill,ar_3:4/IMG_0384_vxlfz6"
-          srcset="https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_300,c_fill,ar_3:4/IMG_0384_vxlfz6 300w,
-                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_500,c_fill,ar_3:4/IMG_0384_vxlfz6 500w,
-                  https://res.cloudinary.com/dt0o6mmyr/image/upload/f_auto,q_auto:eco,w_700,c_fill,ar_3:4/IMG_0384_vxlfz6 700w"
-          sizes="(max-width: 768px) 220px, 300px"
-          width="600"
-          height="800"
-          loading="lazy"
-          decoding="async"
-          alt="Priyam Dalmia"
-          style="width: 100%; height: 100%; object-fit: cover;">
+    <div>
+      <div class="instructor-video-wrapper">
+        <iframe 
+          loading="eager"
+          src="https://www.youtube.com/embed/M7NZibkfy6w?modestbranding=1&rel=0" 
+          title="Message from Priyam" 
+          allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>     
       </div>
     </div>
     <div>
@@ -1439,58 +1700,60 @@
   </div>
 </section>
 
-<!-- ─── TRANSFORMATION ─── -->
 <section class="transformation">
   <div class="centered">
     <div class="section-label">What changes</div>
     <h2 class="section-title">Where you'll be when you finish.</h2>
     <p class="section-sub">Not just more knowledge — a genuinely different profile.</p>
   </div>
-  <div class="transform-grid">
-    <div class="transform-item">
-      <div class="transform-from">AI Confusion — buzzwords everywhere</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">AI Clarity — a real mental model of how systems work</div>
+  
+  <div class="transform-split">
+    <div class="transform-col before">
+      <h3 class="col-title">Before Inspire AI</h3>
+      <ul class="transform-list">
+        <li>
+          <span class="icon x">✗</span>
+          <div>Drowning in AI buzzwords, saving reels, and watching tutorials without building anything real.</div>
+        </li>
+        <li>
+          <span class="icon x">✗</span>
+          <div>Your resume looks identical to thousands of other engineers in the market.</div>
+        </li>
+        <li>
+          <span class="icon x">✗</span>
+          <div>Staying quiet in AI discussions because you lack a solid mental model of how it works.</div>
+        </li>
+        <li>
+          <span class="icon x">✗</span>
+          <div>Feeling career anxiety and wondering if AI is going to eventually replace you.</div>
+        </li>
+      </ul>
     </div>
-    <div class="transform-item">
-      <div class="transform-from">Watching tutorials, saving content</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">Building real AI applications and workflows</div>
-    </div>
-    <div class="transform-item">
-      <div class="transform-from">Prompt tricks and surface-level hacks</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">First-principles understanding: models, data, systems</div>
-    </div>
-    <div class="transform-item">
-      <div class="transform-from">Projects buried on your laptop</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">Published portfolio on LinkedIn and GitHub</div>
-    </div>
-    <div class="transform-item">
-      <div class="transform-from">Nodding quietly in AI discussions</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">Confidently explaining AI concepts and decisions</div>
-    </div>
-    <div class="transform-item">
-      <div class="transform-from">Career anxiety — AI might replace me</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">Career leverage — AI becomes your strongest asset</div>
-    </div>
-    <div class="transform-item">
-      <div class="transform-from">Profile looks like everyone else's</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">More shortlisting, better interviews, stronger market value</div>
-    </div>
-    <div class="transform-item">
-      <div class="transform-from">Learning from random internet creators</div>
-      <div class="transform-arrow">→</div>
-      <div class="transform-to">Mentor-guided growth from a real AI engineer</div>
+    
+    <div class="transform-col after">
+      <h3 class="col-title">After Inspire AI</h3>
+      <ul class="transform-list">
+        <li>
+          <span class="icon check">✓</span>
+          <div>Deep clarity and a robust mental model of exactly how ML models and Agents function.</div>
+        </li>
+        <li>
+          <span class="icon check">✓</span>
+          <div>7 production-style projects deployed directly onto your GitHub and LinkedIn portfolio.</div>
+        </li>
+        <li>
+          <span class="icon check">✓</span>
+          <div>Confidence to lead and speak up in technical AI architecture discussions.</div>
+        </li>
+        <li>
+          <span class="icon check">✓</span>
+          <div>Career leverage: using AI to 10x your output and actively attracting tech recruiters.</div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ─── TESTIMONIALS ─── -->
 <section class="testimonials">
   <div class="centered">
     <div class="section-label">What learners say</div>
@@ -1505,7 +1768,12 @@
         prepared me for follow-up questions interviewers had for me on the projects. Loved the end-to-end nature of the
         project. 10/10 recommended for anyone looking to get their hands dirty with ML.</p>
       <div class="testimonial-author">
-        <div class="testimonial-name">Seemant Achari</div>
+        <div class="testimonial-name-wrap">
+          <div class="testimonial-name">Seemant Achari</div>
+          <a href="https://www.linkedin.com/in/seemant-achari-30351a207/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="linkedin-icon">
+            <svg xmlns="http://www.3w.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
         <div class="testimonial-company">Apple</div>
         <div class="testimonial-context">SDE background → ML path</div>
       </div>
@@ -1516,7 +1784,12 @@
         everything intuitive. What amazed me most was how much I learned in such a short time without feeling
         overwhelmed. It truly was my game-changer for cracking a Day 1 interview.</p>
       <div class="testimonial-author">
-        <div class="testimonial-name">Khushi Verma</div>
+        <div class="testimonial-name-wrap">
+          <div class="testimonial-name">Khushi Verma</div>
+          <a href="https://www.linkedin.com/in/khushi-verma-434827257/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="linkedin-icon">
+            <svg xmlns="http://www.3w.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
         <div class="testimonial-company">Goldman Sachs</div>
         <div class="testimonial-context">Day 1 campus placement</div>
       </div>
@@ -1527,7 +1800,12 @@
         the full project and added it to my resume. In my Flipkart interview for a Supply Chain & PM role, they asked me
         a lot about this project — and I got the offer.</p>
       <div class="testimonial-author">
-        <div class="testimonial-name">Anwesha Ghosh</div>
+        <div class="testimonial-name-wrap">
+          <div class="testimonial-name">Anwesha Ghosh</div>
+          <a href="https://www.linkedin.com/in/anwesha-ghosh-8a57bb222/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="linkedin-icon">
+            <svg xmlns="http://www.3w.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
         <div class="testimonial-company">Flipkart</div>
         <div class="testimonial-context">Product Management role, Day 1 placement</div>
       </div>
@@ -1538,7 +1816,12 @@
         forgotten in such a short time but in a way that didn't feel rushed or shallow. Thanks to this course, I felt
         fully prepared no matter what the interviews threw at me.</p>
       <div class="testimonial-author">
-        <div class="testimonial-name">Akshat Ansh Nayak</div>
+        <div class="testimonial-name-wrap">
+          <div class="testimonial-name">Akshat Ansh Nayak</div>
+          <a href="https://www.linkedin.com/in/akshat-ansh-nayak/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="linkedin-icon">
+            <svg xmlns="http://www.3w.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
         <div class="testimonial-company">Accenture</div>
         <div class="testimonial-context">3 years ML experience → refreshed foundations</div>
       </div>
@@ -1549,29 +1832,53 @@
         deliver both the big picture and the important details in a way that felt easy to grasp. For the first time, I
         felt like I had a guide that covered everything I needed without the overwhelm.</p>
       <div class="testimonial-author">
-        <div class="testimonial-name">Priyanshu Shaw</div>
+        <div class="testimonial-name-wrap">
+          <div class="testimonial-name">Priyanshu Shaw</div>
+          <a href="https://www.linkedin.com/in/priyanshu-shaw-59a852235/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="linkedin-icon">
+            <svg xmlns="http://www.3w.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
         <div class="testimonial-company">Zepto</div>
         <div class="testimonial-context">Landed offer after completing the program</div>
       </div>
     </div>
-    <div class="testimonial-card" style="background: var(--navy); border-color: rgba(0,200,83,0.3);">
-      <div class="testimonial-quote" style="color: var(--green);">"</div>
-      <p class="testimonial-text" style="color: #CBD5E1;">This project will be very useful as it will play a major role
-        in my resume. The session helped me create a project and mention it in my resume — it widened my knowledge about
-        resume building.</p>
-      <div class="testimonial-author">
-        <div class="testimonial-name" style="color: var(--white);">Workshop Participant</div>
-        <div class="testimonial-company">AZ AI/ML Workshop</div>
-        <div class="testimonial-context" style="color: #CBD5E1;">From live workshop feedback</div>
+    <div class="workshop-feedback-card">
+      <div class="workshop-feedback-head">
+        <div>
+          <div class="workshop-feedback-eyebrow">Recent workshop feedback</div>
+          <div class="workshop-feedback-title">Students called the sessions practical, clear, and resume-relevant.</div>
+        </div>
+        <div class="workshop-feedback-pill">AZ AI/ML Workshop</div>
+      </div>
+      <div class="workshop-feedback-grid">
+        <div class="workshop-feedback-item">
+          <p>"Today’s workshop was really helpful. Working on the project made the concepts clearer, and it was great to see how it all works in practice."</p>
+          <span>Workshop participant</span>
+        </div>
+        <div class="workshop-feedback-item">
+          <p>"The teaching was perfect and made us understand vast topics easily."</p>
+          <span>Workshop participant</span>
+        </div>
+        <div class="workshop-feedback-item">
+          <p>"The project session was very useful for revising ML libraries, and this project will play a major role in my resume."</p>
+          <span>Workshop participant</span>
+        </div>
+        <div class="workshop-feedback-item">
+          <p>"The session helped me create a project and mention it in my resume. It widened my knowledge about resume building."</p>
+          <span>Workshop participant</span>
+        </div>
+        <div class="workshop-feedback-item">
+          <p>"I’m not familiar with Python and machine learning, but the projects presented by Priyam sir and team were awesome. I’m keen to learn more from them."</p>
+          <span>Workshop participant</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── CURRICULUM ─── -->
 <section class="curriculum">
   <div class="centered">
-    <div class="section-label" style="color: #4ade80;">The course</div>
+    <div class="section-label">The course</div>
     <h2 class="section-title">8 structured modules. No long playlists.</h2>
     <p class="section-sub">Short, focused modules built for working professionals with a busy schedule. Intuition-first,
       not math-heavy. Roughly 100 minutes of lectures, 150 minutes of guided activities — completable alongside your job
@@ -1582,83 +1889,76 @@
       <div class="module-num">01</div>
       <div class="module-content">
         <h3>Introduction to Machine Intelligence</h3>
-        <p>Build a clear mental model of what AI and ML actually are. Not buzzwords — real understanding. How systems
-          learn, why they work, where they fail.</p>
-        <span class="module-tag">Foundations</span>
+        <p>Go beyond the buzzwords. Build a robust mental model of how modern AI and ML systems actually learn, why they work, and where they fail. First principles for real engineers.</p>
+        <span class="module-tag tag-theory">Foundations</span>
       </div>
     </div>
     <div class="module-item">
       <div class="module-num">02</div>
       <div class="module-content">
         <h3>Machine Learning Fundamentals</h3>
-        <p>Data, models, training — broken down clearly. Understand the building blocks that every modern AI system sits
-          on top of.</p>
-        <span class="module-tag">Foundations</span>
-        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">Project</span>
+        <p>Master the building blocks of every modern AI system: data pipelines, model architecture, and training loops. Includes your first hands-on guided project.</p>
+        <span class="module-tag tag-theory">Foundations</span>
+        <span class="module-tag tag-project">Guided Project</span>
       </div>
     </div>
     <div class="module-item">
       <div class="module-num">03</div>
       <div class="module-content">
         <h3>How Models Actually Learn — Gradient Descent</h3>
-        <p>The mechanism behind all model training. You'll stop treating ML as a black box and start understanding
-          what's actually happening under the surface.</p>
-        <span class="module-tag">Foundations</span>
-        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">Project</span>
+        <p>Stop treating ML as a black box. Understand and visualize the exact mathematical mechanism (Gradient Descent) that drives model training.</p>
+        <span class="module-tag tag-theory">Foundations</span>
+        <span class="module-tag tag-project">Guided Project</span>
       </div>
     </div>
     <div class="module-item">
       <div class="module-num">04</div>
       <div class="module-content">
         <h3>Generative AI — LLMs, Prompting & Modern Systems</h3>
-        <p>Large language models explained properly. What they are, how they're trained, why they behave the way they
-          do. Industry context included.</p>
-        <span class="module-tag">GenAI</span>
+        <p>Large Language Models explained properly. Dive into transformer architecture, how they are trained, and advanced prompting techniques used in production environments.</p>
+        <span class="module-tag tag-theory">GenAI</span>
       </div>
     </div>
     <div class="module-item">
       <div class="module-num">05</div>
       <div class="module-content">
         <h3>Image & Video Generation AI</h3>
-        <p>How modern generative image and video models work — applied to real use cases in product, design, and content
-          creation.</p>
-        <span class="module-tag">GenAI</span>
-        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">2 Projects</span>
+        <p>Discover how diffusion models generate high-fidelity images and video. Apply this to real-world product design and content workflows with two full guided projects.</p>
+        <span class="module-tag tag-theory">GenAI</span>
+        <span class="module-tag tag-project">2 Guided Projects</span>
       </div>
     </div>
     <div class="module-item">
       <div class="module-num">06</div>
       <div class="module-content">
         <h3>Coding with AI</h3>
-        <p>How to use AI as a serious engineering tool — not just autocomplete. Build faster, think clearer, and produce
-          output that shows real technical depth.</p>
-        <span class="module-tag">Applied AI</span>
-        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">Project</span>
+        <p>Leverage AI as a serious engineering co-pilot—not just autocomplete. Ship faster and write production-grade code, featuring a guided project with resume assistance.</p>
+        <span class="module-tag tag-theory">Applied AI</span>
+        <span class="module-tag tag-project">Guided Project</span>
+        <span class="module-tag tag-resume">Resume Assistance</span>
       </div>
     </div>
     <div class="module-item">
       <div class="module-num">07</div>
       <div class="module-content">
         <h3>Agentic AI — State-of-the-Art Systems</h3>
-        <p>Multi-step agents, orchestration, real-world applications. The cutting edge — explained clearly. Build agents
-          that solve business problems, not just demos.</p>
-        <span class="module-tag">Agents</span>
-        <span class="module-tag" style="background: rgba(59,130,246,0.15); color: #60A5FA;">2 Projects</span>
+        <p>The cutting edge of AI. Build multi-step, reasoning agents that solve real business problems. Features two major guided projects: a <strong>News Intelligence Agent</strong> and a <strong>Document Review Agent</strong>.</p>
+        <span class="module-tag tag-theory">Agents</span>
+        <span class="module-tag tag-project">2 Guided Projects</span>
       </div>
     </div>
     <div class="module-item">
       <div class="module-num">08</div>
       <div class="module-content">
         <h3>Showcase & Portfolio Publishing</h3>
-        <p>How to document, present, and publish your projects on LinkedIn and GitHub so recruiters actually notice
-          them. Showing the world you're AI-ready is just as important as being AI-ready.</p>
-        <span class="module-tag">Career Impact</span>
+        <p>Your skills only matter if the market sees them. Get step-by-step resume assistance and learn to publish your 7 projects on LinkedIn and GitHub so premium tech recruiters actually notice you.</p>
+        <span class="module-tag tag-theory">Career Impact</span>
+        <span class="module-tag tag-resume">Resume Assistance</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── PRICING ─── -->
 <section class="pricing" id="enroll">
   <div class="centered">
     <div class="section-label">Enroll</div>
@@ -1673,7 +1973,7 @@
     </div>
     <div class="pricing-body">
       <div class="price-row">
-        <div class="price-current">₹2,899</div>
+        <div class="price-current">₹1,999</div>
         <div class="price-original">₹4,499</div>
       </div>
       <div class="price-save">You save ₹1,600 — Limited-time pricing</div>
@@ -1686,7 +1986,7 @@
         <li>Lifetime access — learn at your pace</li>
         <li>Works alongside your job — complete in 4–8 weeks</li>
       </ul>
-      <a href="https://jdzewp.flexifunnels.com/checkout-page-mr1abogr" class="btn-enroll">Enroll Now — ₹2,899</a>
+      <a href="https://inspireai.freshlearn.com/checkout/Course/40821" class="btn-enroll">Enroll Now — ₹1,999</a>
       <div class="pricing-guarantee">
         🔒 &nbsp; Secure checkout &nbsp;·&nbsp; Questions? Email us before enrolling
       </div>
@@ -1694,7 +1994,6 @@
   </div>
 </section>
 
-<!-- ─── FAQ ─── -->
 <section class="faq">
   <div class="centered">
     <div class="section-label">Questions</div>
@@ -1704,57 +2003,69 @@
   <div class="faq-list">
     <div class="faq-item">
       <div class="faq-question">Do I need coding experience?<span class="faq-icon">+</span></div>
-      <div class="faq-answer">No coding experience is required to start. The course is built for working professionals
-        with a tech or engineering background who want to understand and build with AI — not for computer science
-        graduates who already have ML training. If you already code, you'll find the project work even more hands-on and
-        useful.</div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">No coding experience is required to start. The course is built for working professionals
+          with a tech or engineering background who want to understand and build with AI — not for computer science
+          graduates who already have ML training. If you already code, you'll find the project work even more hands-on and
+          useful.</div>
+      </div>
     </div>
     <div class="faq-item">
       <div class="faq-question">I already code. Is this too basic for me?<span class="faq-icon">+</span></div>
-      <div class="faq-answer">No. This teaches the <em>AI layer</em> — not programming basics. Many engineers who code
-        every day have never trained a model, built an agent, or published an AI project on their portfolio. If you can
-        build, this course gives you the AI knowledge and project proof to translate that into career growth. Most
-        engineers who've taken this found the projects challenging and the foundations refreshing.</div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">No. This teaches the <em>AI layer</em> — not programming basics. Many engineers who code
+          every day have never trained a model, built an agent, or published an AI project on their portfolio. If you can
+          build, this course gives you the AI knowledge and project proof to translate that into career growth. Most
+          engineers who've taken this found the projects challenging and the foundations refreshing.</div>
+      </div>
     </div>
     <div class="faq-item">
       <div class="faq-question">How long will this take? I'm busy.<span class="faq-icon">+</span></div>
-      <div class="faq-answer">The program is designed for working professionals. There are roughly 100 minutes of
-        lecture content and 150 minutes of guided activity/project content — plus quizzes and exercises. Most people
-        complete it comfortably alongside their job in 4–8 weeks at a few hours per week. The modules are short and
-        focused — no binge-watching required.</div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">The program is designed for working professionals. There are roughly 100 minutes of
+          lecture content and 150 minutes of guided activity/project content — plus quizzes and exercises. Most people
+          complete it comfortably alongside their job in 4–8 weeks at a few hours per week. The modules are short and
+          focused — no binge-watching required.</div>
+      </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">What will my portfolio actually look like after this?<span class="faq-icon">+</span>
+      <div class="faq-question">What will my portfolio actually look like after this?<span class="faq-icon">+</span></div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">You'll have 7 documented, published projects spanning: AI-powered learning content,
+          trained ML models, GenAI applications (image and video), and two agentic AI systems. Each project comes with
+          guided publishing instructions so you can put them on LinkedIn and GitHub where recruiters actually look. These
+          are not toy demos — they're the kind of projects that generate interview conversations.</div>
       </div>
-      <div class="faq-answer">You'll have 7 documented, published projects spanning: AI-powered learning content,
-        trained ML models, GenAI applications (image and video), and two agentic AI systems. Each project comes with
-        guided publishing instructions so you can put them on LinkedIn and GitHub where recruiters actually look. These
-        are not toy demos — they're the kind of projects that generate interview conversations.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question">Why should I learn from Priyam specifically?<span class="faq-icon">+</span></div>
-      <div class="faq-answer">Because he actually works at the edge of AI at Google — not just teaching about it. His
-        content is not GPT-generated scripts. He's an IIT Kharagpur alumnus who made the same journey many of you are
-        considering — no AI background to Microsoft Research, to American Express AI/ML, to Google AI Research. He knows
-        the technology deeply, he knows how recruiters respond, and he has already led 1,000+ engineers through this
-        kind of learning. Most AI "educators" online are content creators. Priyam is an engineer who teaches.</div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">Because he actually works at the edge of AI at Google — not just teaching about it. His
+          content is not GPT-generated scripts. He's an IIT Kharagpur alumnus who made the same journey many of you are
+          considering — no AI background to Microsoft Research, to American Express AI/ML, to Google AI Research. He knows
+          the technology deeply, he knows how recruiters respond, and he has already led 1,000+ engineers through this
+          kind of learning. Most AI "educators" online are content creators. Priyam is an engineer who teaches.</div>
+      </div>
     </div>
     <div class="faq-item">
       <div class="faq-question">Will this help me even if my job isn't "AI"?<span class="faq-icon">+</span></div>
-      <div class="faq-answer">Yes — that's one of the key insights behind this program. AI projects improve your market
-        value regardless of your current role. Anwesha Ghosh used her project to land a Product Management role at
-        Flipkart. Seemant Achari used it to move from SDE to an ML path at Apple. The market responds to visible proof
-        of capability — not job titles.</div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">Yes — that's one of the key insights behind this program. AI projects improve your market
+          value regardless of your current role. Anwesha Ghosh used her project to land a Product Management role at
+          Flipkart. Seemant Achari used it to move from SDE to an ML path at Apple. The market responds to visible proof
+          of capability — not job titles.</div>
+      </div>
     </div>
     <div class="faq-item">
       <div class="faq-question">Is there a refund policy?<span class="faq-icon">+</span></div>
-      <div class="faq-answer">Yes. If the course isn't what you expected, reach out within 7 days and we'll make it
-        right. We'd rather you get value than keep your money.</div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer">Yes. If the course isn't what you expected, reach out within 7 days and we'll make it
+          right. We'd rather you get value than keep your money.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ─── FINAL CTA ─── -->
 <section class="final-cta">
   <h2>The AI opportunity is real.<br><em>The question is how you use it.</em></h2>
   <p>
@@ -1762,17 +2073,16 @@
     one of them.
   </p>
   <div class="final-cta-btns">
-    <a href="https://jdzewp.flexifunnels.com/checkout-page-mr1abogr" class="btn-primary"
-      style="font-size: 1.05rem; padding: 16px 32px;">Enroll Now — ₹2,899</a>
+    <a href="https://inspireai.freshlearn.com/checkout/Course/40821" class="btn-primary"
+      style="font-size: 1.15rem; padding: 18px 40px;">Enroll Now — ₹1,999</a>
   </div>
-  <p style="margin-top: 24px; font-size: 0.82rem; color: #94A3B8;">
+  <p style="margin-top: 32px; font-size: 0.9rem; color: #64748B;">
     No coding experience required &nbsp;·&nbsp; Complete alongside your job &nbsp;·&nbsp; 1,000+ engineers trained
   </p>
 </section>
 
 </main>
 
-<!-- ─── FOOTER ─── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Inspire<span>.ai</span></div>
@@ -1787,5 +2097,28 @@
     © 2025 Inspire AI &nbsp;·&nbsp; Built by Priyam Dalmia &nbsp;·&nbsp; IIT Kharagpur · AI Research @ Google
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const faqItem = button.parentElement;
+      const answerWrapper = button.nextElementSibling;
+      const isActive = faqItem.classList.contains('active');
+
+      // Close all other accordions first
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+        item.querySelector('.faq-answer-wrapper').style.maxHeight = null;
+      });
+
+      // If the clicked one wasn't already open, open it
+      if (!isActive) {
+        faqItem.classList.add('active');
+        answerWrapper.style.maxHeight = answerWrapper.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
