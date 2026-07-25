@@ -927,6 +927,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       box-shadow: 0 10px 30px rgba(9, 14, 23, 0.02);
       gap: 16px;
     }
@@ -937,9 +938,11 @@
       border-color: rgba(16, 185, 129, 0.3);
     }
 
+    /* Portrait 9:16 format for YouTube Shorts */
     .testimonial-video-wrapper {
-      width: 100%;
-      aspect-ratio: 16/9;
+      width: min(100%, 280px);
+      margin: 0 auto;
+      aspect-ratio: 9 / 16;
       border-radius: 12px;
       overflow: hidden;
       background: var(--navy-mid);
@@ -948,11 +951,15 @@
 
     .testimonial-video-wrapper iframe {
       position: absolute;
-      top: 0;
-      left: 0;
+      inset: 0;
       width: 100%;
       height: 100%;
       border: none;
+    }
+
+    .testimonial-video-card .testimonial-author {
+      width: 100%;
+      text-align: left;
     }
 
     /* Project card resume & interview helpers */
@@ -1654,14 +1661,14 @@
             <div class="testimonial-context">SDE background → ML path</div>
           </div>
         </div>
-        <!-- Video Testimonial Placeholder -->
+        <!-- Video Testimonial -->
         <div class="testimonial-video-card">
           <div class="testimonial-video-wrapper">
-            <!-- REPLACE 'BUoTBrZVJik' WITH YOUR YT TESTIMONIAL VIDEO ID -->
-            <iframe loading="lazy" 
-              src="https://www.youtube.com/embed/BUoTBrZVJik" 
-              title="Inspire AI Student Video Testimonial" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            <iframe
+              loading="lazy"
+              src="https://www.youtube.com/embed/2-s5aYcrAJ4?playsinline=1&amp;modestbranding=1&amp;rel=0"
+              title="Inspire AI Student Video Testimonial"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen>
             </iframe>
           </div>
